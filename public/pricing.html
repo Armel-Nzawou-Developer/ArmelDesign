@@ -1,0 +1,251 @@
+<!-- Developed by Armel Nzawou -->
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArmelDesign ★ | Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/pricing.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+    <style>
+      body {
+        background-color: #e8e8ff;
+      }
+
+      /* MAIN GRID--------------------- */
+      .grid-container {
+        display: grid;
+        gap: 0.5em;
+        grid-template-areas:
+          "nav nav"
+          "pricing pricing "
+          "footer footer ";
+        min-height: 100vh;
+      }
+      .flex-nav_item > li {
+        list-style: none;
+      }
+
+
+      /* NESTED GRID--------------------- */
+      .grid-pricing {
+        width: 75%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-columns: auto;
+        grid-gap: 25px;
+        place-items: center;
+      }
+       .grid-pricing > h1 {
+        color:#282e40;
+       }
+
+      .pricing-item > .pricing-header p{
+        margin-bottom: 10px;
+
+      }
+       .pricing-header{
+        background-color: #282e40;
+        color: white;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        height: 95px;
+        min-width: 75%;
+
+       }
+
+       .pricing-header > p {
+            color: #D4AF37;
+            font-weight: 800;
+            font-size: large;
+        }
+        .pricing-header > h2 {
+           margin-left: 20px;
+        } 
+        
+      .pricing-list{
+        background-color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+        min-height: 110px;
+        padding-bottom: 80px;
+        min-width: 75%;
+       
+      }
+
+      .pricing-list> p {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: #282e40;
+         font-weight: 800;
+      }
+      .pricing-list> p, li {
+       margin-bottom: 10px;
+      
+      }
+  
+      .footer-list li{ 
+        list-style: none;
+      }
+      
+      /* MEDIA QUERY-------------------- */
+      @media (max-width: 600px) {
+        .grid-container {
+          display: grid;
+          gap: 0.5em;
+          grid-auto-columns: auto;
+          grid-template-areas:
+            "nav  nav"
+            "pricing pricing"
+            "footer footer";
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Flex Grid -->
+    <div class="grid-container">
+      <!-- Top Navbar Section -->
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+              
+          <div class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="../index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./contact.html">Contact</a></li></div>
+             </div>
+    </div>
+  </div>
+      
+      <!-- Content section---Main Grid Item (grid-item)  as well as a nested grid (.grid-card)-->
+      <div class="grid-item grid-pricing " style="grid-area: pricing">
+        <h1>Website Development Pricing</h1>
+
+        <div class="pricing-item">
+          <div class="pricing-header gradient-background">
+            <p>★ Basic Package</p>
+            <h2>ZAR 5,000</h2>
+          </div>
+          <div class="pricing-details ">
+            <div class="pricing-list">
+                <p>Perfector small businesses or personal websites</p>
+              <ul>
+                <p style="font-weight: 600; color: #282e40;">Includes:</p> 
+                <li>3 - 5 Pages</li>
+                <li>Custom Design</li>
+                <li>Basic Animation Interactions</li>
+                <li>Fully Responsive layout (Mobile + Desktop)</li>
+                <li>1 round of Revisions</li>
+                <li>Basic SEO Set up</li>
+                <li>Free deployment to client's hosting</li>
+              </ul>
+              <p>Delivery dealine: 7 working days</p>
+            </div>  
+          </div>
+        </div>
+        <div class="pricing-item">
+          <div class="pricing-header gradient-background">
+            <p>★ Standard Package</p>
+            <h2>ZAR 8,500</h2>
+          </div>
+          <div class="pricing-details ">
+            <div class="pricing-list ">
+                <p>Best for growing businesses need a more complete website.</p>
+              <ul>
+                <p style="font-weight: 600; color: #282e40;">Includes:</p> 
+                <li>6 - 8 Pages</li>
+                <li>Mordern Custom UI design</li>
+                <li>Standard Animation & Functionality </li>
+                <li>Fully Responsive layout (Mobile + Desktop)</li>
+                <li>Google  Maps + Contact Form</li>
+                <li>Basic SEO Set up</li>
+                <li>2 rounds of revisions</li>
+                <li>On-page SEO optimization</li>
+                <li>Speed optimization</li>
+                <li>Deployment +1 Week support</li>
+              </ul>
+              <p>Delivery deadline: 14 working days</p>
+            </div>  
+          </div>
+        </div>
+        <div class="pricing-item">
+          <div class="pricing-header gradient-background">
+            <p>★ Premium Package</p>
+            <h2>ZAR 14,500</h2>
+          </div>
+          <div class="pricing-details">
+            <div class="pricing-list">
+                <p>Professional package for businesses that want high quality and personalization</p>
+              <ul>
+                <p style="font-weight: 600; color: #282e40;">Includes:</p> 
+                <li>Up to 10+ Pages</li>
+                <li>Fully custom UI Design</li>
+                <li>Advanced features</li>
+                <li>Smooth transitions & animations</li>
+                <li>form integrations</li>
+                <li>3 rounds of Revisions</li>
+                <li>Fully on-page SEO</li>
+                <li>Performance tuning</li>
+              </ul>
+              <p>Delivery dealine: 28 - 36 working days</p>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="grid-item footer-nav " style="grid-area: footer">
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>ArmelDesign ★</h2></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Terms & Policy ★</h2></li>
+            <li><a href="../terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Explore ★</h2></li>
+            <li><a href="./contact.html">Hire</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Socials ★</h2></li>
+            <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+            <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><p style="color: #f2a172">© Since 2025</p></li>
+            <li><p>All Rights Reseved.</p></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

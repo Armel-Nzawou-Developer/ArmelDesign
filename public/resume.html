@@ -1,0 +1,231 @@
+<!-- Developed by Armel Nzawou -->
+ <!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmelDesign ★ | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+    <style>
+      /* GRID--------------------- */
+        .grid-container {
+        display: grid;
+        gap: 0.5em;
+        grid-auto-columns: 1fr 3fr;
+        grid-template-areas:
+          "nav nav"
+          "aside main"
+          "footer footer";
+          min-height: 100vh;
+
+      } 
+      .flex-aside{
+        display: flex;
+       flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-content: center;
+      background-color:  #8082A6;
+      color: white;
+      padding: 15px 15px;
+      margin: 15px 15px;
+          
+      }
+         .aside-item h3{
+        color: #282E40;       
+      }
+
+      .flex-main{  
+       display: flex;
+       flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-content: center;
+      background-color:  #8082A6;
+      color: white;
+      margin: 15px 15px;
+      padding: 15px 15px;     
+    }
+    .main-item h2, h3{
+        color: #282E40;
+      }
+    
+      /* KEY FRAMES------ */
+      .flex-main h2 {
+        animation-duration: 4s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 200%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 50%;
+        }
+      }
+      /* KEY FRAMES --END*/
+
+      /* MEDIA QUERY-------------------- */
+      @media (max-width: 930px) {
+
+        .grid-container {
+        display: grid;
+        gap: 0.5em;
+        grid-auto-columns: auto;
+        grid-template-areas:
+          "nav nav"
+          "main main"
+          "aside aside"
+          "footer footer";
+
+          
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Main Grid -->
+  <div class="grid-container">
+
+      <!-- Top Navbar Section -->
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+              
+          <div class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="../index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./contact.html">Contact</a></li></div>
+             </div>
+    </div>
+  </div>
+       
+
+      <!-- Aside section -->
+      <div class="grid-item flex-aside" style="grid-area: aside">
+
+        <div class="aside-item">
+          
+          <h3>Expertise</h2><br/>
+            <p>- UI/ UX Design</p>
+          <p>- Front - End Development</p>
+          <p>- Back - End Development</p>
+        </div><br/>
+        <div class="aside-item">
+          <h3>Software knowledge</h3><br/>
+          <p>HTML & CSS</p>
+          <img src="../images/html-css-icon.svg"  alt="html-css-icon" height="30"/>
+          <p>Javascript</p>
+          <img src="../images/javascript-icon.svg" alt="javascript-icon" height="40"/>
+          <p>React.js</p>
+          <img src="../images/react-icon.svg" alt="react-icon" height="40"/>
+          <p>Node.js</p>
+          <img src="../images/nodejs-icon.svg" alt="nodejs-icon" height="40"/>
+        </div><br/>
+        <div class="aside-item">
+          <h3>Personal Skills</h3><br/>
+          <p>English - Fluent ✓</p>
+          <p>French - Native ✓</p>
+          <p>Spanish - Fluent ✓</p>
+        </div><br/>
+      </div>
+
+      <!-- Main section -->
+      <div class="grid-item flex-main" style="grid-area: main">
+        <div class="main-item">
+          
+          <h1>Armel Nzawou | <span style="color:#282E40">Software Developer</span>  </h1><br/>
+          <p>Experienced Web & Software Developer skilled in HTML, CSS, JavaScript, and more.<br/> 
+            Strong interest in collaborative teamwork and continuous learning.<br/>
+             Motivated to expand expertise in both Front-End and Back-End development for websites, Apps, and web Apps.
+            </p><br/>
+      </div>
+      <div class="main-item">
+     
+        <h2>★ Work experience</h2> <br/> 
+        <h3>Freelance Web Developer - May 2023 – to Present</h3>
+        <p>- Building clients websites</p>
+        <p>- Responsive design</p>
+        <p>- Fixing bugs that occur</p>
+        <p>- Improving SEO</p>
+        <p>- Deploying sites</p>
+        <p>- Maintenance</p></p><br/>
+
+        <h3>Front-End Developer - July 2021 –  April 2023 - at Craze Environmental (Pty) Ltd</h3> 
+        <p>- Collaborating with clients to shape the website’s look and feel, writing code with HTML, CSS, JSX, and React.js.</p>
+         <p>- Maintaining and updating websites and user interfaces.</p> <br/>
+
+        <h3>Front-End Developer (Intern) -  July  –  November 2019 - at CPUT </h3>
+        <p>- Producing tools that enhance the user’s website experience.</p>
+        <p>- Ensuring websites are cross-platforms, including, Tablets, laptops, and smartphones</p> 
+         <p>- Fixing any website issues or bugs that occurs</p><br/>
+        </div>
+
+     <div class="main-item">    
+      <h2>★ Education </h2><br/> 
+      <h3>Cape Peninsula University of Technology (CPUT) – Cape Town, South Africa</h3>
+      <p>- Advanced Diploma in ICT (Applications Development) - 2023</p>
+       <p>- Diploma in ICT (Applications Development)  2015 – 2019</p><br/>
+    </div>
+    <div class="main-item">    
+      <h2>★ Awards / Certifications</h2><br/> 
+      <p>- Cisco Certificate in IT Essentials: PC Hardware and Software - May 2016</p>
+    </div>
+    </div>
+      <!-- Footer Section -->
+      <footer class="grid-item footer-nav" style="grid-area: footer">
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>ArmelDesign ★</h2></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Terms & Policy ★</h2></li>
+            <li><a href="../terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Explore ★</h2></li>
+            <li><a href="./contact.html">Hire</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Socials ★</h2></li>
+            <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+            <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><p style="color: #f2a172">© Since 2025</p></li>
+            <li><p>All Rights Reseved.</p></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

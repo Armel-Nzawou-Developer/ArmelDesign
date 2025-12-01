@@ -1,0 +1,212 @@
+<!-- Developed by Armel Nzawou -->
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArmelDesign ★ | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+    <style>
+      body {
+        background-color: #e8e8ff;
+        overflow-x: hidden;
+      }
+
+      /* MAIN GRID--------------------- */
+      .grid-container {
+        display: grid;
+        gap: 0.5em;
+         grid-template-areas:
+          "nav nav"
+          "contact contact"
+          "footer footer";
+        min-height: 100vh;
+      }
+      /* Icons FLEXBOX -----------*/
+     
+    .icons{
+        display: flex;
+        flex-direction: row; /* place icons side by side with the paragraph*/
+        align-items: center;    /* vertical alignment */
+        gap: 0.5em;
+        margin: 10px 10px ;
+
+      }
+  
+      /* NESTED GRID--------------------- */
+      .grid-contact {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-items: center;
+        background-color: #8082a6;
+        color: white;
+        margin: 15px 15px;
+        padding: 15px 15px;
+        min-height: 100vh;
+      }
+      .contact-item > h1{
+        margin: 10px 10px;
+      }
+      .contact-item > img {
+        width: 50%;
+        border-radius: 50%;
+      }
+      
+      .contact-details img {
+        height: 25px;
+      }
+      .contact-details h2 {
+        color: #282E40;
+      }
+
+      .form-wrapper {
+       display: flex;
+       justify-content: center;
+        align-items: center;
+       padding: 1rem;
+}
+
+        iframe {
+       margin-top: none;
+       border-radius: 30px;
+       background-color: #282E40;
+}
+
+
+  
+      /* MEDIA QUERY-------------------- */
+      @media (max-width: 680px) {
+        .grid-container {
+          display: grid;
+          gap: 0.5em;
+          grid-auto-columns: auto;
+          grid-template-areas:
+            "nav nav"
+            "contact contact"
+            "footer footer";
+        }
+        .grid-contact {
+          display: grid;
+          grid-template-columns: 1fr;
+          margin: 1rem;
+          padding: 1rem;
+      
+        }
+html {
+  -webkit-text-size-adjust: 100%; /* stops iOS auto-zoom */
+}
+
+.contact-item > img{
+      width: 100%;
+    }
+
+ }
+    </style>
+  </head>
+
+  <body>
+    <!-- Main  Grid -->
+    <div class="grid-container">
+      <!-- Top Navbar Section -->
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+              
+          <!-- Hamburger-menu -->
+        <div class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="../index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./contact.html">Contact</a></li></div>
+             </div>
+    </div>
+  </div>
+
+      <!-- content section --- Main grid Item (grid-item) as well as Nested Grid (grid-content)-->
+      <div class="grid-item grid-contact" style="grid-area: contact">
+        <div class="contact-item">
+          <img src="../images/image-contact-icon.svg" alt="image-icon" />
+           <h1>Contact me</h1>
+          <div class="contact-details">
+            <h2>Location</h2>
+            <div class="icons">
+              <img src="../images/location-icon.svg" alt="location-icon" />
+              <p>25 Chippenham Crescent, Parklands, Cape Town, WC, South Africa, 7441</p>
+            </div>
+            <h2>Phone</h2>
+            <div class="icons">
+                <img src="../images/phone-icon.svg" alt="phone-icon" />
+                 <p>(+27) 74 – 836 – 8368 </p>
+              </div>
+              <h2>Email</h2>
+            <div class="icons">
+               <img  src="../images/email-icon.svg" alt="email-icon"/>
+               <p>armel.nzawou.developer@gmail.com</p>
+              </div>         
+            <h2>Socials</h2>
+              <div class="icons">
+                <a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180"><img title="LinkedIn"  src="../images/linkedin-icon.svg" alt="linkedin-icon" /></a>
+                <a  target="_blank" href="https://github.com/Armel-Nzawou-Developer"><img title="Github"  src="../images/github-icon.svg" alt="github-icon" /></a>
+                <a  target="_blank" href="https://www.facebook.com/armel.nzawou"><img title="Facebook"  src="../images/facebook-icon.svg" alt="facebook-icon" /></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="form-wrapper">
+            <iframe width="400px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__qcDbzlUQk1VTzhLUkhGUFM5N0M3Szk0RDhCVlNSOS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Section -->
+      <footer class="grid-item footer-nav" style="grid-area: footer">
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>ArmelDesign ★</h2></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Terms & Policy ★</h2></li>
+            <li><a href="../terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Explore ★</h2></li>
+            <li><a href="./contact.html">Hire</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Socials ★</h2></li>
+            <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+            <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><p style="color: #f2a172">© Since 2025</p></li>
+            <li><p>All Rights Reseved.</p></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

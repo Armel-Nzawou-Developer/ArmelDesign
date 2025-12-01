@@ -1,0 +1,217 @@
+<!-- Developed by Armel Nzawou -->
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmelDesign ★ | Web Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styling/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./favicon/favicon.png" />
+    <style>
+
+     /* GRID--------------------- */
+    .grid-container {
+     display: grid;
+     grid-template-areas:
+     "nav nav"
+     "hero hero" 
+     "banner banner"
+     "footer footer";
+     min-height: 100vh;
+}
+/* FLEXBOX--------------------- */
+      .flex-hero{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+       margin: 15px 15px;
+      }
+      .flex-hero > .hero-item{
+        color: white;
+      }
+      .hero-image{
+      width: 50px; 
+      height: 50px;
+      margin: 15px;
+      padding: 15px;
+      
+      }
+
+     .flex-banner{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-items: center;
+      height: auto;
+      gap: 25px;
+      background-color: white;
+       margin-top: 25px;
+      padding: 30px 30px;
+
+    }
+    .banner-item{
+      fleX:1;
+    }
+    .flex-banner > .banner-item{
+      color: #282E40;
+               
+    }
+    .button-class button{
+     color:white;
+     background-color:#282E40;
+     font-weight: 700;
+     height: 50px;
+     width:  150px;
+     text-transform: uppercase;
+     border-radius: 10px;
+     transition: all 0.4s;
+     border: none;
+    }
+
+  .button-class button:hover{
+  background-color:#f2a172;
+  color: #282E40;
+  text-transform: uppercase;
+  border: none;
+
+}
+
+      /* KEY FRAMES------ */ 
+   .flex-hero p {
+      animation-duration: 2s;
+      animation-name: slidein;       
+  }
+
+    @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+/* KEY FRAMES END*/ 
+
+    /* MEDIA QUERY-------------------- */
+     @media (max-width: 645px){
+      .flex-hero {
+       display: flex ;
+       flex-wrap: wrap;
+       flex-direction: column;  
+       justify-items: center;
+       align-items: center;       
+      }
+      
+      .hero-item img{
+      width: 100%;
+    }
+      .flex-banner{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Main Grid -->
+    <div class="grid-container">
+     
+      <!-- Top Navbar Section -->
+ 
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="./index.html"><img src="./images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+              
+          <div class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="./index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./public/resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./public/portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./public/about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./public/pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./public/pricing.html">Contact</a></li></div>
+             </div>
+    </div>
+  
+  </div>
+
+    <!-- Hero Section -->
+      <div class="grid-item flex-hero " style="grid-area: hero;">
+        <div class="hero-item">          
+            <h1>Hello, I'm Armel,<br/> <span style="color:#282E40; text-transform:uppercase;">a Web Developer.</span></h1>
+            <p>I specialize in delivering beautiful, responsive,<br/> and user-friendly websites tailored to your needs.</span></p>
+        </div>
+        <div class="hero-item">
+          <img class="hero-image-"src="./images/hero-image.png"alt="hero-image" height="270" />
+        </div>
+      </div>
+
+
+    <!-- Banner Section -->  
+        <div class=" grid-item flex-banner" style="grid-area: banner;">
+          <div class="banner-item">
+                <h2>Need a website?</h2><br/>
+            <p>I am a passionate Web Developer building high quality websites,<br/>turning complex problems into simple, beautiful Web Solutions. </p>
+          </div>
+          <div class="banner-item">
+            <div class="banner-item button-class"><a target="_blank " href="./public/contact.html"><button>Hire me</button></a></div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->  
+      <footer class="grid-item footer-nav" style="grid-area: footer;">
+          <div class="footer-list">
+            <ul class="footer-item">
+              <li><h2>ArmelDesign ★</h2></li>
+              <li><a href="./public/about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <ul class="footer-item">
+              <li><h2>Terms & Policy ★</h2></li>
+              <li><a href="./terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <ul class="footer-item">
+              <li><h2>Explore ★</h2></li>
+              <li><a href="./public/contact.html">Hire</a></li>
+              <li><a href="./public/pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <ul class="footer-item">
+              <li><h2>Socials ★</h2></li>
+              <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+              <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <ul class="footer-item">
+              <li><p style="color: #f2a172">© Since 2025</p></li>
+              <li><p>All Rights Reseved.</p></li>
+            </ul>
+          </div>
+      </footer>
+    </div>
+      </body>
+</html>
