@@ -1,24 +1,24 @@
-<!-- 1. Project Title -->
+1. Project Title
 
 Personal Website named: ArmelDesign★
 
-<!-- 2. Description -->
+2. Description
 
-A responsive personal portfolio website built with HTML5 and CSS.
+A responsive personal portfolio website built with HTML and CSS.
 It showcases my projects, skills, Web Developemnt services, and contact information in a clean, accessible design.
 
-<!-- 3. Features -->
+3. Features
 
 • Responsive design (mobile, tablet & desktop friendly)
 • Accessible with proper semantic HTML and ARIA labels
 • Sticky navigation bar and hamburger menu
 • Custom branding and styling
 
-<!-- 4 Folder structure -->
+4. Folder structure
 
 ![alt text](image.png)
 
-<!-- 5. Technologies Used -->
+5. Technologies Used
 
 • HTML5
 • Modern CSS (Flexbox, Grid, Media Queries)
@@ -31,7 +31,7 @@ It showcases my projects, skills, Web Developemnt services, and contact informat
 .Game-Design-4-hex { color: #282E40;} Navbar color
 .Game-Design-5-hex { color: #F2A172; } Current page color
 
-<!-- 6. Accessibility & Best Practices -->
+6. Accessibility & Best Practices
 
 This site follows accessibility best practices:
 
@@ -39,11 +39,11 @@ This site follows accessibility best practices:
 - Proper alt attributes for images
 - Language attribute set to `en-GB`
 
-<!-- 7. Deployment -->
+7. Deployment
 
 Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
-<!-- 8. License -->
+8. License
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
