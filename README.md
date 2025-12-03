@@ -5,7 +5,7 @@ Personal Website named: ArmelDesign★
 2. Description
 
 A responsive personal portfolio website built with HTML and CSS.
-It showcases my projects, skills, Web Developemnt services, and contact information in a clean, accessible design.
+It showcases my projects, skills, Web Development services, and contact information in a clean, accessible design.
 
 3. Features
 
@@ -48,3 +48,4 @@ Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
+
