@@ -22,8 +22,8 @@ It showcases my projects, skills, Web Developemnt services, and contact informat
 
 • HTML5
 • Modern CSS (Flexbox, Grid, Media Queries)
+• Hex Colors from Adobe Palette Color:
 
-• Hex Colors from Adobe Palette Color
 /_ Color Theme Swatches in Hex _/
 .Game-Design-1-hex { color: #F2BBC9; }
 .Game-Design-2-hex { color: #AFA9D9; } body color
@@ -47,3 +47,4 @@ Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
+
