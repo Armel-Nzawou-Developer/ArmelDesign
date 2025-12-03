@@ -11,7 +11,7 @@ It showcases my projects, skills, Web Developemnt services, and contact informat
 
 • Responsive design (mobile, tablet & desktop friendly)
 • Accessible with proper semantic HTML and ARIA labels
-• Sticky navigation bar and hamburger menu
+• Hamburger menu
 • Custom branding and styling
 
 4. Folder structure
@@ -20,16 +20,17 @@ It showcases my projects, skills, Web Developemnt services, and contact informat
 
 5. Technologies Used
 
-• HTML5
-• Modern CSS (Flexbox, Grid, Media Queries)
-• Hex Colors from Adobe Palette Color:
+- HTML5
+- Modern CSS (Flexbox, Grid, Media Queries)
 
-/_ Color Theme Swatches in Hex _/
-.Game-Design-1-hex { color: #F2BBC9; }
-.Game-Design-2-hex { color: #AFA9D9; } body color
-.Game-Design-3-hex { color: #8082A6; } Aside background color
-.Game-Design-4-hex { color: #282E40;} Navbar color
-.Game-Design-5-hex { color: #F2A172; } Current page color
+- Hex Colors from Adobe Palette Color:
+
+- /_ Color Theme Swatches in Hex _/
+- Game-Design-1-hex { color: #F2BBC9; }
+- Game-Design-2-hex { color: #AFA9D9; } body color
+- Game-Design-3-hex { color: #8082A6; } Aside background color
+- Game-Design-4-hex { color: #282E40;} Navbar color
+- Game-Design-5-hex { color: #F2A172; } Current page color
 
 6. Accessibility & Best Practices
 
@@ -47,4 +48,3 @@ Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
-
