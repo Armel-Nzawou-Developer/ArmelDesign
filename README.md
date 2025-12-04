@@ -16,7 +16,7 @@ It showcases my projects, skills, Web Development services, and contact informat
 
 4. Folder structure
 
-![alt text](image.png)
+![alt text](./images/folder-structure.png)
 
 5. Technologies Used
 
@@ -48,4 +48,5 @@ Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
+
 
