@@ -1,0 +1,246 @@
+<!-- Developed by Armel Nzawou -->
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArmelDesign ★ | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+    <style>
+
+:root{
+  --primary-color:        #AFA9D9; /*  body color */
+  --secondary-color:      #8082A6; /*  Aside color */
+  --nav-and-footer-color: #282E40; /*  Navbar and footer color */
+  --text-and-hover-color: #F2A172; /*  acrive page and hover color */
+
+  --body-bg-color:        #afa9d9;
+  --text-color-initial:   #ffff;
+  --alt-hover-color:      #F2BBC9;
+}
+
+      body {
+        background-color: #e8e8ff;
+      }
+
+      /* MAIN GRID--------------------- */
+      .grid-container {
+        display: grid;
+        gap: 0.5em;
+        grid-auto-columns: 1fr 3fr;
+        grid-template-areas:
+          "nav nav"
+          "aside content"
+          "footer footer";
+        min-height: 100vh;
+   
+      }
+      /* FLEXBOX -----------*/
+      .flex-aside {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--nav-and-footer-color);
+        color: var(--text-color-initial);
+        padding: 15px 15px;
+        margin: 15px 15px;
+        box-shadow: 0px 10px 8px 0px var(--nav-and-footer-color);
+
+      }
+      .aside-item img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: 15px 15px;
+        border: 5px solid var(--text-and-hover-color);
+      }
+      .aside-item > h2 {
+       text-align: center;
+       padding: 5px;
+      }
+
+      /* NESTED GRID--------------------- */
+      .grid-content {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-items: center;
+        background-color: var(--secondary-color);
+        color: var(--text-color-initial);
+        font-size: larger;
+        margin: 15px 15px;
+        padding: 15px 15px;
+        min-height: 100vh;
+        box-shadow: 0px 10px 8px 0px var(--nav-and-footer-color);
+
+      }
+
+      .content-item img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: 15px;
+        border: 5px solid var(--text-color-initial);
+      }
+
+      .content-item > .about-text > h1, h3 {
+        text-align: center;
+        padding: 5px;
+      }
+      .content-item p {
+        text-align: justify;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: var(--nav-and-footer-color);
+        font-weight: 700;
+        letter-spacing: -1px;
+       
+      }
+
+      /* MEDIA QUERY-------------------- */
+      @media (max-width: 970px) {
+        .grid-container {
+          display: grid;
+          gap: 5px;
+          grid-auto-columns: auto;
+          grid-template-areas:
+            "nav nav"
+            "content content"
+            "aside aside"
+            "footer footer";
+        }
+        .grid-content {
+          display: grid;
+          flex-wrap: wrap;
+          grid-template-columns: 1fr;        
+ 
+        }
+
+        .content-item p {
+          font-size: larger;
+        font-weight: 700;
+        line-height: 25px;
+        font-size: larger;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Main  Grid -->
+    <div class="grid-container">
+      <!-- Top Navbar Section -->
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+              
+          <div class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="../index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link active-link"><a href="./about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./contact.html">Contact</a></li></div>
+             </div>
+    </div>
+  </div>
+
+      <!-- Aside section -->
+      <div class="grid-item flex-aside" style="grid-area: aside">
+        <div class="aside-item">
+          <img src="../images/about-image-two.svg" />
+          <h2>Web Development</h2>
+        </div>
+      </div>
+
+      <!-- content section --- Main grid Item (grid-item) as well as Nested Grid (grid-content)-->
+      <div class="grid-item grid-content" style="grid-area: content">
+        <div class="content-item">
+          <div class="about-text">
+            <h1>About me</h1>
+            <img
+              class="about-image"
+              src="../images/about-me-image.jpg"
+              alt="about-me-image"
+            />
+            <!-- <h2>Software/Web Development</h2> -->
+            <h3>Web Developer ★</h3>
+          </div>
+        </div>
+
+        <div class="content-item">
+          <div>
+            <p>
+              I am a passionate Web Developer dedicated to creating modern,
+              responsive, and user-focused websites.<br />
+              I specialize in delivering web solutions tailored to each client’s
+              unique needs, ensuring every project is functional, efficient, and
+              visually engaging.<br />
+            </p>
+            <p>
+              Beyond coding, I have a strong passion for languages. I am a
+              native French speaker and speak both English and Spanish fluently.
+              <br />Learning languages helps me connect with people from
+              different cultures and brings a fresh perspective to my work.<br />
+            </p>
+            <p>
+              I am always learning, always building, and always striving to
+              deliver the best experience for my clients.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Section -->
+      <footer class="grid-item footer-nav" style="grid-area: footer">
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>ArmelDesign ★</h2></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Terms & Policy ★</h2></li>
+            <li><a href="../terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Explore ★</h2></li>
+            <li><a href="./contact.html">Hire</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Socials ★</h2></li>
+            <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+            <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><p style="color:var(--text-and-hover-color)">© Since 2025</p></li>
+            <li><p>All Rights Reseved.</p></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

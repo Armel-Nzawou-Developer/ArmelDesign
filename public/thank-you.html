@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ArmelDesign ★ | Thank You for contacting !</title>
+  <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+  <style>
+
+:root{
+  --primary-color:        #AFA9D9; /*  body color */
+  --secondary-color:      #8082A6; /*  Aside color */
+  --nav-and-footer-color: #282E40; /*  Navbar and footer color */
+  --text-and-hover-color: #F2A172; /*  acrive page and hover color */
+
+  --body-bg-color:        #afa9d9;
+  --text-color-initial:   #ffff;
+  --alt-hover-color:      #F2BB9C;
+}
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg,#282E40, #8082A6 );
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .thankyou-card {
+      margin: 25px 25px;
+      background: var(--nav-and-footer-color);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px var(--text-and-hover-color);
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .thankyou-card .checkmark {
+      font-size: 60px;
+      color: greenyellow;
+      margin-bottom: 20px;
+    }
+    .thankyou-card h1 {
+      font-size: 28px;
+      margin: 0;
+      color: var(--text-color-initial);
+    }
+    .thankyou-card p {
+      font-size: 16px;
+      color: var(--text-and-hover-color);
+      margin-top: 10px;
+    }
+    .thankyou-card a {
+      font-size: 16px;
+      color: var(--text-color-initial);
+      margin-top: 20px;
+      text-decoration: none;
+     
+    }
+    /* .thankyou-card a {
+      font-size: 16px;
+      color: #666;
+      margin-top: 10px;
+    } */
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-card">
+    <div class="checkmark">✔</div>
+    <h1>Thank You!</h1>
+    <p>Your message was submitted successfully! <br/>We will reply to you soon!</p>
+    <a href="https://armel-nzawou-developer.github.io/ArmelDesign"> ← Go Back</a>
+  </div>
+</body>
+</html>

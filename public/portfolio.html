@@ -1,0 +1,257 @@
+<!-- Developed by Armel Nzawou -->
+ <!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmelDesign ★ |  Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../favicon/favicon.png" />
+    <style>
+
+:root{
+  --primary-color:        #AFA9D9; /*  body color */
+  --secondary-color:      #8082A6; /*  Aside color */
+  --nav-and-footer-color: #282E40; /*  Navbar and footer color */
+  --text-and-hover-color: #F2A172; /*  acrive page and hover color */
+
+  --body-bg-color:        #afa9d9;
+  --text-color-initial:   #ffff;
+  --alt-hover-color:      #F2BBC9;
+}
+      body {
+        background-color: #e8e8ff;
+      }
+
+      /* MAIN GRID--------------------- */
+      .grid-container {
+        display: grid;
+        gap: 0.5em;
+        grid-template-areas:
+          "nav nav"
+          "top top"
+          "card card "
+          "footer footer ";
+          min-height: 100vh;
+      }
+      /* FLEXBOX -----------*/
+      .flex-top {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        color: var(--text-color-initial);
+        padding: 15px 15px;
+        margin: 15px 15px;
+        max-width: 200px;
+        box-shadow: 0px 10px 8px 0px var(--nav-and-footer-color);
+        
+      }
+      /* NESTED GRID--------------------- */
+      .grid-card {
+        width: 75%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-columns: auto;
+        grid-gap: 25px;
+        place-items: center;
+      }
+      .card-item {
+        background-color: var(--secondary-color);
+        box-shadow: 0px 10px 8px 0px var(--nav-and-footer-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      }.card-item:hover {
+       transform: scale(1.1); /* zoom in on the card */
+       box-shadow: 0 8px 20px var(--text-and-hover-color);
+     }
+
+
+      .card-item img {
+        width: 100%;
+      }
+      .card-text {
+        text-align: center;
+        padding: 10px;
+      }
+      .card-text h2 {
+        margin-top: 5px;
+        letter-spacing: 1.5px;
+        color: var(--text-color-initial);
+      }
+
+      .card-text h3 {
+        font-size: 17px;
+        color: var(--nav-and-footer-color);
+        margin-top: 5px;
+      }
+
+      .card-text p {
+        margin-top: 10px;
+        color: var(--text-color-initial);
+      }
+
+      .card-button button {
+        color: var(--text-color-initial);
+        background-color: var(--primary-color);
+        font-weight: 700;
+        height: 40px;
+        width: 120px;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        text-transform: uppercase;
+        border-radius: 10px;
+        transition: all 0.4s;
+        border: none;
+      }
+      .card-button button:hover {
+        background-color: var(--text-and-hover-color);
+        color: var(--nav-and-footer-color);
+        text-transform: uppercase;
+        border: none;
+      }
+
+      /* MEDIA QUERY-------------------- */
+      @media (max-width: 603px) {
+        .grid-container {
+          display: grid;
+          gap: 0.5em;
+          grid-auto-columns: auto;
+          grid-template-areas:
+            "nav  nav"
+            "top top"
+            "card card"
+            "footer footer";
+        }
+        .flex-top{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          padding: 15px 15px;
+          height: 130px;
+          min-width: 92%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Flex Grid -->
+    <div class="grid-container">
+      <!-- Top Navbar Section -->
+      <div class="grid-item flex-navbar" style="grid-area: nav;">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png"  height="30"/>ArmelDesign★</a></div>  
+            
+          <div class="hamburger"><!-- Hamburger menu   -->
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <div class="nav-list">
+               <div class="nav-item"><li class="nav-link"><a href="../index.html">Home</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./resume.html">Resume</a></li></div>
+               <div class="nav-item"><li class="nav-link active-link"><a href="./portfolio.html">Portfolio</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./about.html">About</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./pricing.html">Pricing</a></li></div>
+               <div class="nav-item"><li class="nav-link"><a href="./contact.html">Contact</a></li></div>
+             </div>
+    </div>
+  </div>
+
+      <!-- Top section -->
+      <div class="grid-item flex-top" style="grid-area: top">
+        <div class="top-item">
+          <h1>Projects ★</h1>
+          <p>These are some of the projects I have worked on ✓</p>
+        </div>
+      </div>
+
+      <!-- Content section---Main Grid Item (grid-item)  as well as a nested grid (.grid-card)-->
+      <div class="grid-item grid-card" style="grid-area: card">
+        <div class="card-item">
+          <img src="../images/visa-agency-solutions.png" alt="card-image" />
+          <div class="card-text">
+            <h2>Visa Agency Solutions</h2>
+            <h3>Nov - Dec 2025 ★ </h3>
+            <p>Developed with HTML, CSS, & PHP.</p>
+            <a target="_blank " href="https://armel-nzawou-developer.github.io/Visa-Agency-Solutions/" class="card-button"><button>View Project</button></a>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="../images/TinDog-project.png" alt="card-image" />
+          <div class="card-text">
+            <h2>TinDog Project</h2>
+            <h3>Nov 2025 ★ </h3>
+            <p>Developed with HTML, CSS, & Bootstrap 5.</p>
+            <a  href=" https://armel-nzawou-developer.github.io/start-up-ideas/"target="_blank " class="card-button"><button>View Project</button></a>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="../images/card-image.jpg" alt="card-image" />
+          <div class="card-text">
+            <h2>Transport Project</h2>
+            <h3>Aug 2016 ★ </h3>
+            <p>Developed with HTML, CSS, Bootstrap 4 & PHP</p>
+            <a target="_blank " href="./page-not-found.html" class="card-button"><button>View Project</button></a>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="../images/card-image.jpg" alt="card-image" />
+          <div class="card-text">
+            <h2>TwitterPub App</h2>
+            <h3>Jul 2016 ★ </h3>
+            <p>Developed with HTML, CSS, Bootstrap 4</p>
+            <a target="_blank " href="./page-not-found.html" class="card-button"><button>View Project</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="grid-item footer-nav" style="grid-area: footer">
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>ArmelDesign ★</h2></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Terms & Policy ★</h2></li>
+            <li><a href="../terms/Web_Developer_Services_EN.pdf">Term of services</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Explore ★</h2></li>
+            <li><a href="./contact.html">Hire</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><h2>Socials ★</h2></li>
+            <li><a  target="_blank" href="https://za.linkedin.com/in/armel-nzawou-nzawou-332792180">LinkedIn</a></li>
+            <li><a  target="_blank" href="https://www.facebook.com/armel.nzawou">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul class="footer-item">
+            <li><p style="color: var(--text-and-hover-color)">© Since 2025</p></li>
+            <li><p>All Rights Reseved.</p></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
