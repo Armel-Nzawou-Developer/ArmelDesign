@@ -5,13 +5,13 @@ Personal Website named: ArmelDesign★
 2. Description
 
 A responsive personal portfolio website built with HTML and CSS.
-It showcases my projects, skills, Web Development services, and contact information in a clean, accessible design.
+It showcases my projects, skills, Web Developemnt services, and contact information in a clean, accessible design.
 
 3. Features
 
 • Responsive design (mobile, tablet & desktop friendly)
 • Accessible with proper semantic HTML and ARIA labels
-• Hamburger menu
+• Sticky navigation bar and hamburger menu
 • Custom branding and styling
 
 4. Folder structure
@@ -22,6 +22,7 @@ It showcases my projects, skills, Web Development services, and contact informat
 
 - HTML5
 - Modern CSS (Flexbox, Grid, Media Queries)
+- Form Handling API from "Web3Forms" (https://docs.web3forms.com)
 
 - Hex Colors from Adobe Palette Color:
 
@@ -48,5 +49,3 @@ Live Demo: https://armel-nzawou-developer.github.io/ArmelDesign/
 
 - This project is not an open source but personal.
 - This project is licensed under my own brand.
-
-
