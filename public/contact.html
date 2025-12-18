@@ -86,11 +86,6 @@
        padding: 1rem;
 }
 
-        /* iframe {
-       margin-top: none;
-       border-radius: 30px;
-       background-color: var(--nav-and-footer-color);
-} */
 
 /* Contact form - CSS------------ */
 
@@ -148,8 +143,6 @@
 .contact-form button:hover {
   background-color: var(--text-and-hover-color);
 }
-
-
 
   
       /* MEDIA QUERY-------------------- */
@@ -240,27 +233,26 @@ html {
           <div class="contact-form ">
             <h2>Contact form</h2>
             <form action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="41954815-c3cc-4338-929f-46ed9aab8858">
+              <input type="hidden" name="access_key" value="650f4ca2-2f46-41f9-9456-42963db00d62">
               <input type="hidden" name="redirect" value="https://armel-nzawou-developer.github.io/ArmelDesign/public/thank-you.html"> <!-- redirect to thank you page -->
               <input type="hidden" name="subject" value="ArmelDesign ★ - Inquiries">  <!-- Subject email -->
-              <label for="firstNname">First Name:</label>
-              <input type="text"name="First name" placeholder="Your first name"required/>
+              
+              <label for="first_name">First Name:</label>
+              <input type="text"  id="first_name" name="first_name" placeholder="Your first name"required/>
 
-              <label for="lastNname"> Last name:</label>
-              <input type="text" name="Last name" placeholder="Your last name" required/>
+              <label for="last_name"> Last name:</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Your last name" required/>
 
               <label for="email">Email:</label>
-              <input
-                type="email"name="Email"placeholder="Your email adress"required
-                 /> 
+              <input type="email" id="email"name="email" placeholder="Your email adress"required/> 
                 
               <label for="inquiry">Reason for contacting:</label>
-              <select id="inquiry" name="Inquiry">
+              <select id="inquiry" name="inquiry">
                 <option value="">=======Select=======</option>
                 <option value="General">General inquiry</option>
                 <option value="Website Development Request"> Website Development Request</option>
-                <option value=" Quote Request">Request a Quote</option>
-                <option value=" More on services"> Learn more about the Services</option>
+                <option value="Quote Request">Request a Quote</option>
+                <option value="More on services"> Learn more about the Services</option>
               </select>
               <textarea  name="Message"placeholder="Your Message"required ></textarea>
                <button type="submit" value="submit">Send</button>
@@ -306,4 +298,3 @@ html {
     </div>
   </body>
 </html>
-
