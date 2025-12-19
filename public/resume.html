@@ -54,6 +54,21 @@
         color: var(--nav-and-footer-color);       
       }
 
+      .aside-item img{
+        background-color:var(--body-bg-color);
+        height: 40px;
+        margin: 10px 10px;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px var(--nav-and-footer-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .aside-item img:hover{
+        transform: scale(1.3); /* zoom in on the icons */
+        box-shadow: 0 8px 20px var(--text-and-hover-color);
+
+
+      }
+
       .flex-main{  
        display: flex;
        flex-wrap: wrap;
@@ -148,13 +163,13 @@
         <div class="aside-item">
           <h3>Software knowledge</h3><br/>
           <p>HTML & CSS</p>
-          <img src="../images/html-css-icon.svg"  alt="html-css-icon" height="30"/>
+          <img src="../images/html-css-icon.svg"  alt="html-css-icon" />
           <p>Javascript</p>
-          <img src="../images/javascript-icon.svg" alt="javascript-icon" height="40"/>
+          <img src="../images/javascript-icon.svg" alt="javascript-icon" />
           <p>React.js</p>
-          <img src="../images/react-icon.svg" alt="react-icon" height="40"/>
+          <img src="../images/react-icon.svg" alt="react-icon" />
           <p>Node.js</p>
-          <img src="../images/nodejs-icon.svg" alt="nodejs-icon" height="40"/>
+          <img src="../images/nodejs-icon.svg" alt="nodejs-icon" />
         </div><br/>
         <div class="aside-item">
           <h3>Personal Skills</h3><br/>
