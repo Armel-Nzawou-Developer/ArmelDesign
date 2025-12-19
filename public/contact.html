@@ -70,6 +70,7 @@
       .contact-item > img {
         width: 50%;
         border-radius: 50%;
+        animation: fadeIn 1s ease-in-out;
       }
       
       .contact-details img {
@@ -97,6 +98,7 @@
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--alt-hover-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .contact-form h2 {
@@ -143,7 +145,12 @@
 .contact-form button:hover {
   background-color: var(--text-and-hover-color);
 }
+/* KEYFRAME FOR MAIN ICON AND CONTACT FORM -------------------- */
 
+@keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   
       /* MEDIA QUERY-------------------- */
       @media (max-width: 680px) {
@@ -235,7 +242,7 @@ html {
             <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="650f4ca2-2f46-41f9-9456-42963db00d62">
               <input type="hidden" name="redirect" value="https://armel-nzawou-developer.github.io/ArmelDesign/public/thank-you.html"> <!-- redirect to thank you page -->
-              <input type="hidden" name="subject" value="ArmelDesign ★ - Inquiries">  <!-- Subject email -->
+              <input type="hidden" name="subject" value="ArmelDesign ★ - Inquiries">  <!-- email Subject  -->
               
               <label for="first_name">First Name:</label>
               <input type="text"  id="first_name" name="first_name" placeholder="Your first name"required/>
