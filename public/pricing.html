@@ -46,6 +46,20 @@
         list-style: none;
       }
 
+      /* FLEXBOX--------------------- */
+        .flex-pricing-title{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+        }
+        .flex-pricing-title > h1{
+          margin: 15px 20px;
+          color: var(--nav-and-footer-color);
+          animation: fadeIn 2s ease-in-out;
+
+        }
+
       /* NESTED GRID--------------------- */
       .grid-pricing {
         width: 75%;
@@ -101,7 +115,11 @@
         padding-bottom: 80px;
         min-width: 75%;
       }
-
+      .recommended-package{ 
+        text-align: center;
+        font-weight: 800;
+        color: var(--text-and-hover-color);
+      }
       .pricing-list > p {
         padding-bottom: 15px;
         padding-top: 15px;
@@ -142,7 +160,7 @@
       }
     </style>
   </head>
- <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NGHJZG2ZJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -190,10 +208,12 @@
         </div>
       </div>
 
-      <!-- Content section---Main Grid Item (grid-item)  as well as a nested grid (.grid-card)-->
-      <div class="grid-item grid-pricing" style="grid-area: pricing">
-        <h1>Website Development Pricing</h1>
-
+      <!-- Pricing section -->
+      <div class="grid-item " style="grid-area: pricing">
+         <div class=" flex-pricing-title"><!-- Pricing title FLEXBOX -->
+          <h1>Website Development Pricing</h1>
+         </div> 
+        <div class="grid-pricing"> <!-- Pricing title - GRID -->
         <div class="pricing-item">
           <div class="pricing-header gradient-background">
             <p>★ Basic Package</p>
@@ -223,6 +243,7 @@
           </div>
           <div class="pricing-details">
             <div class="pricing-list">
+                <div class="recommended-package"><p>Most Popular ✓</p></div>     
               <p>Best for growing businesses need a more complete website.</p>
               <ul>
                 <p style="font-weight: 600; color: var(--nav-and-footer-color)">Includes:</p>
@@ -267,6 +288,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       <!-- Footer Section -->
@@ -321,4 +343,3 @@
     </div>
   </body>
 </html>
-
